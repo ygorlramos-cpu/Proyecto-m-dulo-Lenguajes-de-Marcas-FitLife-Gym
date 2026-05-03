@@ -1,6 +1,4 @@
-# 💪 FitLife Gym — Lenguajes de Marcas y SGI
-
-Módulo **0373 - Lenguajes de Marcas y Sistemas de Gestión de Información**  
+# 💪 FitLife Gym — Lenguajes de Marcas
 Proyecto Intermodular · FitLife Gym
 
 ---
