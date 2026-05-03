@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gimnasio SYSTEM "modelo.dtd">
+<!--
+  ARCHIVO DE PRUEBA - XML INTENCIONALMENTE INCORRECTO
+  Este XML falla la validación del DTD para demostrar que el modelo.dtd
+  controla los errores reales.
+
+  ERRORES INTRODUCIDOS:
+  1. Atributo 'estado' con valor no permitido: "pendiente" (no está en la enumeración)
+  2. Atributo 'especialidad' del entrenador con valor no permitido: "natacion"
+  3. Elemento <telefono> duplicado en socio (viola la estructura del DTD)
+  4. Elemento <clase> con tipo no permitido: "baile"
+-->
+<gimnasio nombre="FitLife Gym ERROR TEST">
+
+  <socios>
+    <!-- ERROR 1: estado="pendiente" no está permitido en el DTD -->
+    <socio id="S099" estado="pendiente">
+      <nombre>Test Error</nombre>
+      <email>test@error.com</email>
+      <telefono>600000000</telefono>
+      <fecha_alta>2025-01-01</fecha_alta>
+      <tipo_membresia>basica</tipo_membresia>
+      <inscripciones/>
+    </socio>
+  </socios>
+
+  <entrenadores>
+    <!-- ERROR 2: especialidad="natacion" no está permitida en el DTD -->
+    <entrenador id="E099" especialidad="natacion">
+      <nombre>Error Entrenador</nombre>
+      <email>error@fitlife.com</email>
+      <telefono>600000001</telefono>
+      <fecha_contrato>2025-01-01</fecha_contrato>
+    </entrenador>
+  </entrenadores>
+
+  <clases>
+    <!-- ERROR 3: tipo="baile" no está permitido en el DTD -->
+    <clase id="C099" tipo="baile" estado="activa">
+      <nombre>Baile Moderno</nombre>
+      <descripcion>Clase de baile</descripcion>
+      <horario dia="lunes" hora_inicio="10:00" hora_fin="11:00"/>
+      <aforo_maximo>20</aforo_maximo>
+      <precio_mensual>25.00</precio_mensual>
+      <ref_entrenador>E099</ref_entrenador>
+    </clase>
+  </clases>
+
+</gimnasio>
