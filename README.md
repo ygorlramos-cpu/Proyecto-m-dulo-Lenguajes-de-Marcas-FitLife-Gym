@@ -74,11 +74,3 @@ Abrir `docs/informe.html` en el navegador para ver el informe completo.
 | **Importación** | El JSON permite importar datos iniciales a la app |
 
 ---
-
-## 🛠️ Tecnologías usadas
-
-![XML](https://img.shields.io/badge/XML-orange?style=flat)
-![DTD](https://img.shields.io/badge/DTD-blue?style=flat)
-![XSLT](https://img.shields.io/badge/XSLT-green?style=flat)
-![JSON](https://img.shields.io/badge/JSON-yellow?style=flat)
-![CSS](https://img.shields.io/badge/CSS3-purple?style=flat)
